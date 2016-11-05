@@ -1,0 +1,9 @@
+{
+  "restartable": "rs",
+  "verbose": false,
+  "watch": ["dist", "src/server"],
+  "ignore": ["dist/frontend"],
+  "ext": "js jsx json pug",
+  "quiet": true,
+  "colours": false
+}

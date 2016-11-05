@@ -1,0 +1,49 @@
+{
+  "name": "mike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server/index.js",
+  "scripts": {
+    "babel-compile": "./node_modules/.bin/babel src --out-dir dist --only src --ignore dist --compact true --no-comments --no-highlight-code -D",
+    "babel-watch": "./node_modules/.bin/babel --watch src --out-dir dist --only src/server --ignore dist/server/index.js --compact true --no-comments --no-highlight-code -D",
+    "stylus-watch": "stylus src/frontend/assets/stylus/index.styl --watch --inline --compress --use nib --disable-cache --resolve-url --resolve-url-nocheck --out src/frontend/assets/css/main.css",
+    "webpack-frontend-compile": "webpack --config webpack.frontend.js --progress --colors -v",
+    "webpack-frontend-watch": "webpack --config webpack.frontend.js --progress --colors --watch -v"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "json-loader": "^0.5.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "request": "^2.78.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-css-modules-transform": "^1.1.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2016": "^6.16.0",
+    "babel-preset-es2017": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "colors": "^1.1.2",
+    "css-loader": "^0.25.0",
+    "css-modules-require-hook": "^4.0.5",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "postcss-loader": "^1.1.0",
+    "react-css-modules": "^3.7.10",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3"
+  }
+}
