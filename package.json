@@ -8,9 +8,10 @@
     "babel-watch": "./node_modules/.bin/babel --watch src --out-dir dist --only src/server --ignore dist/server/index.js --compact true --no-comments --no-highlight-code -D",
     "stylus-watch": "stylus src/frontend/assets/stylus/index.styl --watch --inline --compress --use nib --disable-cache --resolve-url --resolve-url-nocheck --out src/frontend/assets/css/main.css",
     "webpack-frontend-compile": "webpack --config webpack.frontend.js --progress --colors -v",
-    "webpack-frontend-watch": "webpack --config webpack.frontend.js --progress --colors --watch -v"
+    "webpack-frontend-watch": "webpack --config webpack.frontend.js --progress --colors --watch -v",
+    "start": "node ./dist/server/index.js"
   },
-  "author": "",
+  "author": "Norman Carcamo",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
