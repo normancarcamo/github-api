@@ -1,7 +1,7 @@
 {
   "name": "github-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "No description",
   "main": "./dist/server/index.js",
   "scripts": {
     "babel-compile": "./node_modules/.bin/babel src --out-dir dist --only src --ignore dist --compact true --no-comments --no-highlight-code -D",
