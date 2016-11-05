@@ -5,4 +5,4 @@ An example of how to use the API of github using Node.js
 
   1. npm install
   2. npm run babel-compile
-  3. nodemon
+  3. npm run start
